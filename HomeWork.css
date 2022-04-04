@@ -1,0 +1,51 @@
+
+.center {
+    display: flex;
+    justify-content : center ;
+    margin-top: 50px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    grid-template-areas:
+                "one one two "
+                "three four four "
+                "three five six "
+                ;
+}
+.wrapper > div {
+    display: flex;
+    justify-content : center ;
+    align-items : center;
+    font-size: 100px;
+    font-family: sans-serif;
+    color: snow;
+}
+
+.one {
+    background-color: lightgreen;
+    grid-area: one;
+}
+.two {
+    background-color: yellow;
+    grid-area: two;
+}
+.three {
+    background-color: aqua;
+    grid-area: three;
+}
+.four {
+    background-color: plum;
+    grid-area: four;
+}
+.five {
+    background-color: aquamarine;
+    grid-area: five;
+}
+.six {
+    background-color: orange;
+    grid-area: six ;
+}
